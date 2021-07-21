@@ -1,4 +1,5 @@
 <?php
+use Dinophp\Bootstrap\App;
 
 /**
  * DinoPHP is a PHP Framework
