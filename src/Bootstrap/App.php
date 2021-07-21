@@ -8,20 +8,19 @@ use Dinophp\Http\Response;
 use Dinophp\File\File;
 use Dinophp\Router\Route;
 
-class App
-{
-    /**
-     * 
-     * App Constructor
-     * 
-     */
-    private function __construct() {}
+class App {
+	/**
+	 * App constructor
+	 *
+	 * @return void
+	 */
+	private function __construct() {}
 
-    /**
-     * 
-     * Run the application
-     *
-     */
+	/**
+	 * Run the application
+	 *
+	 * @return void
+	 */
 	public static function run() {
 		// Register whoops
 		Whoops::handle();
@@ -40,5 +39,5 @@ class App
 
 		// Output the response
 		Response::output($data);
-    }
+	}
 }

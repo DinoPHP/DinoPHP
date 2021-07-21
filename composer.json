@@ -18,7 +18,8 @@
     },
     "autoload" : {
         "psr-4": {
-            "DinoPHP\\" : "src/"
+            "DinoPHP\\" : "src/",
+            "App\\" : "app/"
         },
         "files": [
             "src/Helpers/helper.php"
