@@ -5,7 +5,7 @@ DinoPHP is a web application framework with expressive. We believe development m
 
 ## How to install it
 ``
-composer create-project --prefer-dist ahmed-ibrahim/dinophp blog
+composer create-project --prefer-dist ahmed-ibrahim/dinophp dinophp
 ``
 ## How to learn DinoPHP
 DinoPHP has the most extensive and thorough [documentation](https://dinophp.com/docs), making it a breeze to get started with the framework.
