@@ -1,5 +1,11 @@
 <p align="center"><a href="https://dinophp.com" rel="nofollow"><img src="https://user-images.githubusercontent.com/32125808/126076617-b482ce18-b98e-4851-b90b-a770ff6119e8.png" width="400" style="max-width:100%;"></a></p>
 
+<p align="center">
+<a href="https://packagist.org/packages/ahmed-ibrahim/dinophp"><img src="https://img.shields.io/github/stars/Ahmed-Ibrahimm/DinoPHP" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/ahmed-ibrahim/dinophp"><img src="https://img.shields.io/static/v1?label=packagist&message=1.0.1&color=default" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/static/v1?label=license&message=MIT&color=green" alt="License"></a>
+</p>
+
 ## About DinoPHP
 DinoPHP is a web application framework with expressive. We believe development must be an enjoyable and creative experience. DinoPHP takes the pain out of development by easing common tasks used in many web projects
 
