@@ -7,12 +7,13 @@ use Dinophp\Http\server;
 
 class Url {
 	/**
-	 * Url constructor.
+	 * Url constructor
 	 */
 	private function __construct() {}
 
 	/**
-	 * Get Path
+	 * Get path
+	 *
 	 * @param string $path
 	 * @return string $path
 	 */
@@ -21,19 +22,21 @@ class Url {
 	}
 
 	/**
-	 * Previous Url
-	 * @return mixed|null
+	 * Previous url
+	 *
+	 * @return string
 	 */
 	public static function previous() {
 		return Server::get('HTTP_REFERER');
 	}
 
 	/**
-	 * Previous Url
-	 * @param $path
+	 * Redirect to page
+	 *
+	 * @return void
 	 */
 	public static function redirect($path) {
-		header('Location: ' . $path);
+		header('location: ' . $path);
 		exit();
 	}
 }

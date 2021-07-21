@@ -1,6 +1,6 @@
 <?php
 
-/** 
+/**
  * DinoPHP is a PHP Framework
  * 
  * @author Ahmed Mohamed Ibrahim eng.ahmedmohamed.2002@gmail.com

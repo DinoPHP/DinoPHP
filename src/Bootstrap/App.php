@@ -5,7 +5,6 @@ namespace Dinophp\Bootstrap;
 use Dinophp\Exception\Whoops;
 use Dinophp\Http\Request;
 use Dinophp\Http\Response;
-use Dinophp\Http\Server;
 use Dinophp\File\File;
 use Dinophp\Router\Route;
 
@@ -22,21 +21,24 @@ class App
      * 
      * Run the application
      *
-     */ 
-    public static function run()
-    {
-        // Whoops for errors
-        Whoops::handle();
+     */
+	public static function run() {
+		// Register whoops
+		Whoops::handle();
 
-        // Handle the request
-        Request::handle();
+		// Start session
+		Session::start();
 
-        // Require all routes directory
-        File::require_dir('routes');
+		// Handle the request
+		Request::handle();
+
+		// Require all routes directory
+		File::require_directory('routes');
 
 		// Handle the route
-        $data = Route::handle();
+		$data = Route::handle();
 
-        Response::output($data);
+		// Output the response
+		Response::output($data);
     }
 }

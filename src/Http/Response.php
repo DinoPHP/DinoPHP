@@ -3,30 +3,31 @@
 namespace Dinophp\Http;
 
 class Response {
-
 	/**
-	 * Response constructor.
+	 * Response constructor
+	 *
+	 *
 	 */
 	private function __construct() {}
 
 	/**
-	 * Return Json Encode
-	 * @param $data
-	 * @return false|string
+	 * Return json respoonse
+	 *
+	 * @params mixed $data
+	 * @return mixed
 	 */
 	public static function json($data) {
 		return json_encode($data);
 	}
 
 	/**
-	 * Output Data
+	 * Output data
+	 *
 	 * @param mixed $data
 	 */
 	public static function output($data) {
-		if(! $data) {
-			return ;
-		}
-		if(!is_string($data)) {
+		if (! $data) {return ;}
+		if (! is_string($data)) {
 			$data = static::json($data);
 		}
 		echo $data;

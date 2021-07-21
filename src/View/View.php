@@ -8,14 +8,18 @@ use Jenssegers\Blade\Blade;
 
 class View {
 	/**
-	 * View constructor.
+	 * View Constructor
+	 *
+	 *
 	 */
 	private function __construct() {}
 
 	/**
-	 * Render View Files
-	 * @param $path
+	 * Render view file
+	 *
+	 * @param string $path
 	 * @param array $data
+	 * @return string
 	 */
 	public static function render($path, $data = []) {
 		$errors = Session::flash('errors');
@@ -25,24 +29,28 @@ class View {
 	}
 
 	/**
-	 * Render the view using blade engine
-	 * @param $path
+	 * Render the view files using blade engine
+	 *
+	 * @param string $path
 	 * @param array $data
 	 * @return string
 	 */
 	public static function bladeRender($path, $data = []) {
 		$blade = new Blade(File::path('views'), File::path('storage/cache'));
+
 		return $blade->make($path, $data)->render();
 	}
 
 	/**
-	 * Render View Files
-	 * @param $path
+	 * Render view file
+	 *
+	 * @param string $path
 	 * @param array $data
+	 * @return string
 	 */
-	public static function ViewRender($path, $data = []) {
+	public static function viewRender($path, $data = []) {
 		$path = 'views' . File::ds() . str_replace(['/', '\\', '.'], File::ds(), $path) . '.php';
-		if(! File::exist($path)) {
+		if (! File::exist($path)) {
 			throw new \Exception("The view file {$path} is not exist");
 		}
 
