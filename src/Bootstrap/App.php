@@ -1,12 +1,14 @@
 <?php
 
-namespace Dinophp\Bootstrap;
+namespace DinoPHP\Bootstrap;
 
-use Dinophp\Exception\Whoops;
-use Dinophp\Http\Request;
-use Dinophp\Http\Response;
-use Dinophp\File\File;
-use Dinophp\Router\Route;
+use DinoPHP\Exception\Whoops;
+use DinoPHP\Http\Request;
+use DinoPHP\Http\Response;
+use DinoPHP\File\File;
+use DinoPHP\Router\Route;
+use DinoPHP\Session\Session;
+
 
 class App {
 	/**

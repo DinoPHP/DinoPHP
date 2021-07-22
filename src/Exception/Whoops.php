@@ -1,6 +1,6 @@
 <?php
 
-namespace Dinophp\Exception;
+namespace DinoPHP\Exception;
 
 class Whoops {
     private function __construct() {}

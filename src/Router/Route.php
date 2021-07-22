@@ -1,10 +1,9 @@
 <?php
 
-namespace Dinophp\Router;
+namespace DinoPHP\Router;
 
-use Dinophp\Http\Request;
-use Dinophp\Exception;
-use Dinophp\View\View;
+use DinoPHP\Http\Request;
+use DinoPHP\View\View;
 
 class Route {
 	/**

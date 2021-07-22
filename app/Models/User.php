@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Dinophp\Database\Model;
+use DinoPHP\Database\Model;
 
 class User extends Model {
 	protected static $table = 'users';

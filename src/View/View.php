@@ -1,9 +1,9 @@
 <?php
 
-namespace Dinophp\View;
+namespace DinoPHP\View;
 
-use Dinophp\File\File;
-use Dinophp\Session\Session;
+use DinoPHP\File\File;
+use DinoPHP\Session\Session;
 use Jenssegers\Blade\Blade;
 
 class View {

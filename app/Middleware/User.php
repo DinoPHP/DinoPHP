@@ -3,9 +3,9 @@
 namespace App\Middleware;
 
 class User {
-    public function handle() {
-        if (1 !== 1) {
-            die('test');
-        }
-    }
+	public function handle() {
+		if (1 !== 1) {
+			die('test');
+		}
+	}
 }

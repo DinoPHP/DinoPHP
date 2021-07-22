@@ -1,6 +1,6 @@
 <?php
 
-namespace Dinophp\Cookie;
+namespace DinoPHP\Cookie;
 
 class Cookie {
 	/**

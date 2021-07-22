@@ -1,6 +1,6 @@
 <?php
 
-namespace Dinophp\Http;
+namespace DinoPHP\Http;
 
 class Response {
 	/**
@@ -33,3 +33,4 @@ class Response {
 		echo $data;
 	}
 }
+

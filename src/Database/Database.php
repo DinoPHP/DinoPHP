@@ -1,11 +1,11 @@
 <?php
 
-namespace Dinophp\Database;
+namespace DinoPHP\Database;
 
-use Dinophp\File\File;
-use Dinophp\Http\Request;
-use Dinophp\Http\Response;
-use Dinophp\Url\Url;
+use DinoPHP\File\File;
+use DinoPHP\Http\Request;
+use DinoPHP\Http\Response;
+use DinoPHP\Url\Url;
 use PDO;
 use Exception;
 

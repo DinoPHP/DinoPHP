@@ -9,7 +9,7 @@
  */
 if(! function_exists('view')) {
 	function view($path, $data = []) {
-		return Dinophp\View\View::render($path, $data);
+		return DinoPHP\View\View::render($path, $data);
 	}
 }
 
@@ -21,7 +21,7 @@ if(! function_exists('view')) {
  */
 if(! function_exists('request')) {
 	function request($key) {
-		return Dinophp\Http\Request::value($key);
+		return DinoPHP\Http\Request::value($key);
 	}
 }
 
@@ -33,7 +33,7 @@ if(! function_exists('request')) {
  */
 if(! function_exists('redirect')) {
 	function redirect($path) {
-		return Dinophp\Url\Url::redirect($path);
+		return DinoPHP\Url\Url::redirect($path);
 	}
 }
 
@@ -44,7 +44,7 @@ if(! function_exists('redirect')) {
  */
 if(! function_exists('previous')) {
 	function previous() {
-		return Dinophp\Url\Url::previous();
+		return DinoPHP\Url\Url::previous();
 	}
 }
 
@@ -56,7 +56,7 @@ if(! function_exists('previous')) {
  */
 if(! function_exists('url')) {
 	function url($path) {
-		return Dinophp\Url\Url::path($path);
+		return DinoPHP\Url\Url::path($path);
 	}
 }
 
@@ -68,7 +68,7 @@ if(! function_exists('url')) {
  */
 if(! function_exists('asset')) {
 	function asset($path) {
-		return Dinophp\Url\Url::path($path);
+		return DinoPHP\Url\Url::path($path);
 	}
 }
 
@@ -99,7 +99,7 @@ if(! function_exists('dd')) {
  */
 if(! function_exists('session')) {
 	function session($key) {
-		return Dinophp\session\session::get($key);
+		return DinoPHP\session\session::get($key);
 	}
 }
 
@@ -111,7 +111,7 @@ if(! function_exists('session')) {
  */
 if(! function_exists('flash')) {
 	function flash($key) {
-		return Dinophp\session\session::flash($key);
+		return DinoPHP\session\session::flash($key);
 	}
 }
 
@@ -124,7 +124,7 @@ if(! function_exists('flash')) {
  */
 if(! function_exists('links')) {
 	function links($current_page, $pages) {
-		return Dinophp\Database\Database::links($current_page, $pages);
+		return DinoPHP\Database\Database::links($current_page, $pages);
 	}
 }
 
@@ -136,7 +136,7 @@ if(! function_exists('links')) {
  */
 if(! function_exists('auth')) {
 	function auth($table) {
-		$auth = Dinophp\Session\Session::get($table) ?: Dinophp\Cookie\Cookie::get($table);
-		return \Dinophp\Database\Database::table($table)->where('id', '=', $auth)->first();
+		$auth = DinoPHP\Session\Session::get($table) ?: DinoPHP\Cookie\Cookie::get($table);
+		return DinoPHP\Database\Database::table($table)->where('id', '=', $auth)->first();
 	}
 }

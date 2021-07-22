@@ -1,9 +1,9 @@
 <?php
 
-namespace Dinophp\Validation;
+namespace DinoPHP\Validation;
 
-use Dinophp\Http\Request;
-use Dinophp\Url\Url;
+use DinoPHP\Http\Request;
+use DinoPHP\Url\Url;
 use MongoDB\Driver\Session;
 use Rakit\Validation\Validator;
 

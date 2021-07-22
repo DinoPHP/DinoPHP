@@ -1,7 +1,7 @@
 
 <?php
 
-use Dinophp\Bootstrap\App;
+use DinoPHP\Bootstrap\App;
 
 class Application {
 	/**

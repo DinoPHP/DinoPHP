@@ -1,6 +1,6 @@
 <?php
 
-namespace Dinophp\Database;
+namespace DinoPHP\Database;
 
 abstract class Model extends Database {
 

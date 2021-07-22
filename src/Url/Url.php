@@ -1,9 +1,9 @@
 <?php
 
-namespace Dinophp\Url;
+namespace DinoPHP\Url;
 
-use Dinophp\Http\Request;
-use Dinophp\Http\server;
+use DinoPHP\Http\Request;
+use DinoPHP\Http\server;
 
 class Url {
 	/**

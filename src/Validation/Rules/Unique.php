@@ -1,8 +1,8 @@
 <?php
 
-namespace Dinophp\Validation\Rules;
+namespace DinoPHP\Validation\Rules;
 
-use Dinophp\Database\Database;
+use DinoPHP\Database\Database;
 use Rakit\Validation\Rule;
 
 class UniqueRule extends Rule

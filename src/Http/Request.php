@@ -1,6 +1,6 @@
 <?php
 
-namespace Dinophp\Http;
+namespace DinoPHP\Http;
 
 class Request {
 	/**

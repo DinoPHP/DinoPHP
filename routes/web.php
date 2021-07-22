@@ -1,5 +1,5 @@
 <?php
 
-use Dinophp\Router\Route;
+use DinoPHP\Router\Route;
 
 Route::get('/', 'HomeController@index');
