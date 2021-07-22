@@ -14,7 +14,7 @@
             max-width: 1050px;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 8%;
+            margin-top: 5%;
         }
         .code {
             padding: 7px;
@@ -22,10 +22,10 @@
             margin-top: 3%;
         }
         .ide {
-            background: #eceae8;
+            background: #263238;
             padding: 15px;
             border-radius: 5px;
-            box-shadow: rgb(0 0 0 / 55%) 0px 20px 68px
+            box-shadow: rgb(0 0 0 / 55%) 0px 20px 68px;
         }
         .close-btn {
             background: #ff5f56;
@@ -63,12 +63,39 @@
             font-family: inherit;
             word-wrap: break-word;
         }
+        span[style="color: #0000BB"] {
+            color: #82b1ff !important;
+        }
+        span[style="color: #007700"] {
+            color: #c792ea !important;
+        }
+        span[style="color: #DD0000"] {
+            color: #c3e88d !important;
+        }
+        a {
+            color:#d8d5d5;
+            text-decoration: none;
+        }
+        .links {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            margin-top: 3%;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .links span {
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 17px;
+            letter-spacing: 1px;
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <img src="{{('pics/DinoPHP-word.png')}}" style="max-width: 200px;">
+    <a href="https://dinophp.com" target="_blank"><img src="{{('pics/DinoPHP-word.png')}}" style="max-width: 200px;"></a>
     <div class="code">
         <div class="ide">
             <div class="buttons">
@@ -92,6 +119,12 @@ print_r (welcome());
 echo "</pre>";
 ?>') ?>
             </div>
+        </div>
+        <div class="links">
+            <a href="https://dinophp.com/docs" target="_blank"><span>Documentation</span></a>
+            <a href="https://dinophp.com/news" target="_blank"><span>News</span></a>
+            <a href="https://packagist.org/packages/ahmed-ibrahim/dinophp" target="_blank"><span>Packagist</span></a>
+            <a href="https://github.com/Ahmed-Ibrahimm/DinoPHP" target="_blank"><span>Github</span></a>
         </div>
     </div>
 </div>
