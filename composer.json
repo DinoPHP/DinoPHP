@@ -24,5 +24,8 @@
         "files": [
             "src/Helpers/helper.php"
         ]
+    },
+    "config": {
+        "preferred-install": "dist"
     }
 }
