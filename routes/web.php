@@ -2,4 +2,4 @@
 
 use DinoPHP\Router\Route;
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'Controller@index');

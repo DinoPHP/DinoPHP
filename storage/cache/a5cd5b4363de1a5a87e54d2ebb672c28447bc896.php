@@ -1,0 +1,1 @@
+test<?php /**PATH C:\xampp\htdocs\DinoPHP\views/test.blade.php ENDPATH**/ ?>

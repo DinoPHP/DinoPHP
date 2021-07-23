@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class HomeController {
+class Controller {
 	public function index() {
 		return view('home');
 	}

@@ -1,5 +1,6 @@
 <?php
 use DinoPHP\Bootstrap\App;
+use DinoPHP\Http\Request;
 
 /**
  * DinoPHP is a PHP Framework
