@@ -57,7 +57,7 @@
 <body>
 <div class="error">
     <div class="image">
-        <img src="<?php echo e(('/pics/dino-black.png')); ?>">
+        <img src="<?php echo e(asset ('pics/dino-black.png')); ?>">
     </div>
     <h1>404</h1>
     <p>not found</p>
