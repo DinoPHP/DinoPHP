@@ -31,4 +31,4 @@ require __DIR__.'/../bootstrap/app.php';
 |
 | Handle the requests
 */
-Application::run();
+Application::run(); 
