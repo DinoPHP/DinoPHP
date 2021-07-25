@@ -4,7 +4,7 @@ use DinoPHP\Http\Request;
 
 /**
  * DinoPHP is a PHP Framework
- * 
+ *
  * @author Ahmed Mohamed Ibrahim eng.ahmedmohamed.2002@gmail.com
  */
 
@@ -31,4 +31,4 @@ require __DIR__.'/../bootstrap/app.php';
 |
 | Handle the requests
 */
-Application::run(); 
+Application::run();
