@@ -16,6 +16,23 @@ use DinoPHP\Http\Request;
 | Load the autoloader that will generated class that will be used
 */
 require __DIR__.'/../vendor/autoload.php';
+
+
+/*
+|-------------------------------------------------------------------
+| .env configuration
+|-------------------------------------------------------------------
+|
+| Load .environment file
+*/
+
+use Dotenv\Dotenv;
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$dbUsername = getenv("S3_BUCKET");
+print($dbUsername);
+
 /*
 |-------------------------------------------------------------------
 | Bootstrap

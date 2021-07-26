@@ -14,7 +14,8 @@
         "php": "^7.3|^8.0",
         "filp/whoops": "^2.14",
         "jenssegers/blade": "^1.4",
-        "rakit/validation": "^1.4"
+        "rakit/validation": "^1.4",
+        "vlucas/phpdotenv": "^5.3"
     },
     "autoload" : {
         "psr-4": {
