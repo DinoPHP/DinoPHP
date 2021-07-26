@@ -25,12 +25,8 @@ require __DIR__.'/../vendor/autoload.php';
 |
 | Load .environment file
 */
-use Dotenv\Dotenv;
-$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
-
-$dbUsername = getenv("SECRET_KEY");
-echo $dbUsername;
 
 /*
 |-------------------------------------------------------------------
