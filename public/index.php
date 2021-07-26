@@ -25,13 +25,12 @@ require __DIR__.'/../vendor/autoload.php';
 |
 | Load .environment file
 */
-
 use Dotenv\Dotenv;
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-$dbUsername = getenv("S3_BUCKET");
-print($dbUsername);
+$dbUsername = getenv("SECRET_KEY");
+echo $dbUsername;
 
 /*
 |-------------------------------------------------------------------
