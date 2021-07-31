@@ -57,7 +57,7 @@
 <body>
 <div class="error">
     <div class="image">
-        <img src="{{asset ('pics/dino-black.png')}}">
+        <img src="{{ ('pics/dino-black.png')}}">
     </div>
     <h1>404</h1>
     <p>not found</p>

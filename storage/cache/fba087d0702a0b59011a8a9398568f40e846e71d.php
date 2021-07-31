@@ -66,4 +66,4 @@
     </div>
 </div>
 </body>
-</html><?php /**PATH C:\xampp\htdocs\DinoPHP\views/errors/404.blade.php ENDPATH**/ ?>
+</html><?php /**PATH C:\xampp\htdocs\DinoPHP\views/errors/404.php ENDPATH**/ ?>
