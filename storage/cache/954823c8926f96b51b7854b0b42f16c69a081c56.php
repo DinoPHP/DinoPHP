@@ -132,4 +132,4 @@ echo "</pre>";
 
 </body>
 </html>
-<?php /**PATH C:\xampp\htdocs\DinoPHP\views/home.blade.php ENDPATH**/ ?>
+<?php /**PATH C:\xampp\htdocs\DinoPHP\views/home.php.bubble ENDPATH**/ ?>

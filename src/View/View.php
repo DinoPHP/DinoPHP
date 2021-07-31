@@ -4,7 +4,6 @@ namespace DinoPHP\View;
 
 use DinoPHP\File\File;
 use DinoPHP\Session\Session;
-use Jenssegers\Blade\Blade;
 
 class View {
 	/**
@@ -25,7 +24,7 @@ class View {
 		$errors = Session::flash('errors');
 		$old = Session::flash('old');
 		$data = array_merge($data, ['errors' => $errors, 'old' => $old]);
-		return static::bladeRender($path, $data);
+		return static::bubbleRender($path, $data);
 	}
 
 	/**
@@ -35,10 +34,10 @@ class View {
 	 * @param array $data
 	 * @return string
 	 */
-	public static function bladeRender($path, $data = []) {
-		$blade = new Blade(File::path('views'), File::path('storage/cache'));
-
-		return $blade->make($path, $data)->render();
+	public static function bubbleRender($path, $data = []) {
+		$loader = new \Bubble\Loader\FilesystemLoader('../views');
+		$hummer = new \Bubble\Environment($loader);
+		return $hummer->render($path, $data);
 	}
 
 	/**
@@ -61,4 +60,5 @@ class View {
 		ob_end_clean();
 		return $content;
 	}
+
 }

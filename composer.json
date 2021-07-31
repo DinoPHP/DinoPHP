@@ -15,7 +15,7 @@
         "filp/whoops": "^2.14",
         "rakit/validation": "^1.4",
         "vlucas/phpdotenv": "^5.3",
-        "dinophp/hummer" : "1.0.1",
+        "dinophp/bubbletemplate" : "1.0.1",
         "phpunit/phpunit": "9.5.7",
         "friendsofphp/php-cs-fixer": "3.0.0"
     },

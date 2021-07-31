@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-    <link rel="icon" href="{{('pics/DinoPHP-icon.png')}}">
+    <link rel="icon" href="{{ ('pics/DinoPHP-icon.png') }}">
     <style>
         body {
             background: #092531;
@@ -96,7 +96,7 @@
 <body>
 
 <div class="container">
-    <a href="https://dinophp.com" target="_blank"><img src="{{('pics/DinoPHP-word.png')}}" style="max-width: 200px;"></a>
+    <a href="https://dinophp.com" target="_blank"><img src="{{ ('pics/DinoPHP-word.png') }}" style="max-width: 200px;"></a>
     <div class="code">
         <div class="ide">
             <div class="buttons">
@@ -105,20 +105,17 @@
                 <button class="min-btn" title="Minimize"></button>
             </div>
             <div class="cont-code">
-                <?php
-                highlight_string('<?php
-function welcome(){
-	$intro =[
-		"welcome" => "Welcome !",
-		"congrat" => "Congratulation! You have successfully installed a new DinoPHP application"
-	];
-	return $intro;
-}
 
-echo "<pre>";
-print_r (welcome());
-echo "</pre>";
-?>') ?>
+function welcome(){ <br>
+	$intro = [ <br>
+		"welcome" => "Welcome !", <br>
+		"congrat" => "Congratulation! You have successfully installed a new DinoPHP application" <br>
+	]<br>
+	return $intro <br>
+} <br><br>
+
+print_r (welcome())
+
             </div>
         </div>
         <div class="links">

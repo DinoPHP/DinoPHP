@@ -4,6 +4,6 @@ namespace App\Controllers;
 
 class Controller {
 	public function index() {
-		return view('home');
+		return view('home.php.bubble');
 	}
 }
