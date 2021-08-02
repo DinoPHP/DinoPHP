@@ -151,7 +151,7 @@ class Route {
 			}
 		}
 
-		return View::render('errors.404');
+		return View::render('errors/404.php');
 	}
 
 	/**
