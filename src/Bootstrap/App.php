@@ -41,5 +41,8 @@ class App {
 
 		// Output the response
 		Response::output($data);
+
+		// Send http header
+		header('X-Powered-By: DinoPHP');
 	}
 }
